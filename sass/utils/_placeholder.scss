@@ -2,3 +2,8 @@
   @include fontFamily(p);
   @include fontStyle(700, 51, 60);
 }
+
+%button {
+  border: none;
+  background-color: map-get($colors, 'white');
+}

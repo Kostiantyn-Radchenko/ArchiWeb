@@ -19,64 +19,90 @@
     <header>
       <nav class="navigation container">
         <a href="" class="logo">ArchiWeb</a>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Contact</a>
-          </li>
-          <li class="navigation__item">
-            <button type="button" class="navigation__btn">search</button>
-          </li>
-        </ul>
+        <div class="nav-thumb">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="navigation__btn"
+            aria-label="search icon"
+          >
+            <svg width="25" height="21" class="navigation-button__icon">
+              <use class="icon-open" href="./image/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
     <main>
       <!-- hero -->
       <div class="container">
         <section class="hero">
-          <h1 class="hero__title">Best Solution For Your Home</h1>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet
-          </p>
-          <div class="hero__btn"></div>
+          <div class="hero__thumb">
+            <h1 class="hero__title">Best Solution For Your Home</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet
+            </p>
+          </div>
+          <div class="hero__btn">
+            <svg width="23" height="24" class="hero-button__icon">
+              <use class="icon-open" href="./image/sprite.svg#arowLeft"></use>
+            </svg>
+            <svg width="23" height="24" class="hero-button__icon">
+              <use class="icon-open" href="./image/sprite.svg#arowRight"></use>
+            </svg>
+          </div>
         </section>
       </div>
 
       <!-- our-services -->
-      <div class="container">
-        <section class="our-services">
+      <section class="our-services">
+        <div class="container">
           <h2 class="our-services__title">Our Services</h2>
           <ul class="our-services__list">
             <li class="our-services__item">
+              <div class="our-services__thumb">
+                <img src="./image/list.png" alt="icon list" />
+              </div>
               <h3 class="our-services__subtitle">Planning</h3>
               <p class="our-services__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-services__item">
+              <div class="our-services__thumb">
+                <img src="./image/house.png" alt="icon house" />
+              </div>
               <h3 class="our-services__subtitle">Interior</h3>
               <p class="our-services__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-services__item">
+              <div class="our-services__thumb">
+                <img src="./image/pen.png" alt="icon pen" />
+              </div>
               <h3 class="our-services__subtitle">Exterior</h3>
               <p class="our-services__text">
                 Our Services Line one Servive line two
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- About Us -->
       <div class="container">

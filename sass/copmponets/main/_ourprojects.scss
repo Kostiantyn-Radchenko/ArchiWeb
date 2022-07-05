@@ -5,6 +5,8 @@
   @include fontFamily(i);
   @include fontStyle(400, 20, 24);
 
+  @extend %button;
+
   color: map-get($colors, 'primiryText');
 
   &:hover,

@@ -1,3 +1,11 @@
+// auto margin
+@mixin pushAuto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
 // font family
 @mixin fontFamily($fontFamily) {
   $barlow: 'Barlow', sans-serif;

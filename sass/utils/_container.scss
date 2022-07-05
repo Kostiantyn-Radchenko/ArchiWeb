@@ -1,0 +1,8 @@
+.container {
+  max-width: 1270px;
+  @include pushAuto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // outline: 1px solid black;
+}

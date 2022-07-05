@@ -1,11 +1,46 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 47px;
+  padding-bottom: 20px;
+}
+// logo
 .logo {
   @include fontFamily(b);
   @include fontStyle(600, 42, 50);
 
   color: map-get($colors, 'primiryText');
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'hoverLink');
+  }
+}
+
+// nav
+.nav-thumb {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 106px;
+  }
+
+  &:last-child {
+    margin-right: 64px;
+  }
 }
 
 .navigation__link {
+  padding-top: 67px;
+  padding-bottom: 20px;
+
   @include fontFamily(i);
   @include fontStyle(400, 20, 24);
 
@@ -15,4 +50,25 @@
   &:focus {
     @include fontStyle(700, 20, 24);
   }
+}
+
+// button
+.navigation__btn {
+  display: block;
+
+  padding: 0;
+
+  width: 25px;
+  height: 21px;
+  @extend %button;
+  color: map-get($colors, 'primiryText');
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'hoverLink');
+  }
+}
+
+.navigation-button__icon {
+  fill: currentColor;
 }

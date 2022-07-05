@@ -1,10 +1,50 @@
+.our-services {
+  padding-top: 16px;
+  padding-bottom: 65px;
+
+  background-color: map-get($colors, 'ourServiceBkg');
+}
+
 .our-services__title {
   @extend %title;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.our-services__list {
+  display: flex;
+  align-items: center;
+  margin-left: 105px;
+}
+
+.our-services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 158px;
+
+  &:not(:last-child) {
+    margin-right: 304px;
+  }
+}
+
+.our-services__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+
+  background-color: map-get($colors, 'ourServiceIcon');
+  color: map-get($colors, 'white');
 }
 
 .our-services__subtitle {
-  @include fontStyle(700,27, 32);
+  @include fontStyle(700, 27, 32);
+  margin-bottom: 9px;
 }
 .our-services__text {
-  @include fontStyle(400,16, 19);
+  @include fontStyle(400, 16, 19);
 }
