@@ -1,0 +1,9 @@
+.footer {
+  background-color: map-get($colors, 'footerBkg');
+  color: map-get($colors, 'footerText');
+}
+
+.footer__subtitle {
+  @include fontFamily(i);
+  @include fontStyle(700, 24, 29);
+}

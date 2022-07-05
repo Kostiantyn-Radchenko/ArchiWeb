@@ -1,0 +1,19 @@
+.about-us__title {
+  @extend %title;
+}
+
+.about-us__text {
+  @include fontStyle(400, 31, 36);
+}
+
+.about-us__link {
+  @include fontFamily(i);
+  @include fontStyle(600, 24, 29);
+
+  color: map-get($colors, 'primiryText');
+
+  &:hover,
+  &:focus {
+    color: rgba(47, 46, 46, 0.3);
+  }
+}

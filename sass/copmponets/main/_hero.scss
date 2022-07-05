@@ -1,0 +1,8 @@
+.hero__title {
+  @extend %title;
+}
+
+.hero__text {
+  @include fontFamily(i);
+  @include fontStyle(400, 32, 39);
+}

@@ -1,0 +1,11 @@
+.testimonial__title {
+  @extend %title;
+}
+
+.testimonial__subtitle {
+  @include fontStyle(700, 28, 32);
+}
+
+.testimonial__text {
+  @include fontStyle(400, 17, 22);
+}

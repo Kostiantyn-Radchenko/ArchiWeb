@@ -10,13 +10,15 @@ $colors: (
   'heroBtnBkg': rgba(244, 246, 245, 0.7),
   'white': #ffffff,
   'blackText': #000000,
+  'footerBkg': #2e2f32,
   'footerText': #fafafa,
   'ourServiceIcon': #254d4d,
   'ourServiceBkg': rgba(37, 77, 77, 0.2),
   'arowBTN': #3c3d41,
-  'footerBkg': #2e2f32,
   'scrollActive': #c4c4c4,
   'scrollPassive': #e9e9e9,
+
+  // map-get($colors , '' );
 );
 
 // font-family: 'Barlow', sans-serif;

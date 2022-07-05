@@ -1,0 +1,8 @@
+.left-part__title {
+  @include fontFamily(b);
+  @include fontStyle(600, 42, 50);
+}
+.left-part__text {
+  @include fontFamily(i);
+  @include fontStyle(400, 17, 29);
+}

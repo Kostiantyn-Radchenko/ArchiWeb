@@ -1,0 +1,18 @@
+.logo {
+  @include fontFamily(b);
+  @include fontStyle(600, 42, 50);
+
+  color: map-get($colors, 'primiryText');
+}
+
+.navigation__link {
+  @include fontFamily(i);
+  @include fontStyle(400, 20, 24);
+
+  color: map-get($colors, 'primiryText');
+
+  &:hover,
+  &:focus {
+    @include fontStyle(700, 20, 24);
+  }
+}

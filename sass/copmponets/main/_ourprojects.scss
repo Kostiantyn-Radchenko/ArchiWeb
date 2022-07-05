@@ -1,0 +1,17 @@
+.our-projects__title {
+  @extend %title;
+}
+.our-projects__btn {
+  @include fontFamily(i);
+  @include fontStyle(400, 20, 24);
+
+  color: map-get($colors, 'primiryText');
+
+  &:hover,
+  &:focus {
+    @include fontStyle(700, 20, 24);
+  }
+}
+.our-projects__text {
+  @include fontStyle(400, 18, 21);
+}

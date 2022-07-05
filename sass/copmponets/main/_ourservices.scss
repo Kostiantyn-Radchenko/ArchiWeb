@@ -1,0 +1,10 @@
+.our-services__title {
+  @extend %title;
+}
+
+.our-services__subtitle {
+  @include fontStyle(700,27, 32);
+}
+.our-services__text {
+  @include fontStyle(400,16, 19);
+}

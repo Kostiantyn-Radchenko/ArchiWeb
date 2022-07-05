@@ -1,0 +1,21 @@
+// font family
+@mixin fontFamily($fontFamily) {
+  $barlow: 'Barlow', sans-serif;
+  $inter: 'Inter', sans-serif;
+  $playfairDisplay: 'Playfair Display', serif;
+
+  @if $fontFamily == 'b' {
+    font-family: $barlow;
+  } @else if ($fontFamily == 'i') {
+    font-family: $inter;
+  } @else if ($fontFamily == 'p') {
+    font-family: $playfairDisplay;
+  }
+}
+
+// font style
+@mixin fontStyle($fontWeight, $fontSize, $lineHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize * 1px;
+  line-height: #{$lineHeight/$fontSize};
+}

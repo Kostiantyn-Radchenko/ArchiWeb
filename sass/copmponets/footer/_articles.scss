@@ -1,0 +1,11 @@
+.articles__link {
+  @include fontFamily(i);
+  @include fontStyle(400, 17, 21);
+
+  color: map-get($colors, 'footerText');
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'scrollActive');
+  }
+}
