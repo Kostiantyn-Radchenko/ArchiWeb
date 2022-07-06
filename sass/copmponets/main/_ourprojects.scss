@@ -1,3 +1,21 @@
+.our-projects {
+  padding-bottom: 90px;
+}
+
+.our-projects__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 71px;
+}
+
+.our-projects__listMenu {
+  display: flex;
+}
+
+.our-projects__itemMenu:not(:last-child) {
+  margin-right: 113px;
+}
 .our-projects__title {
   @extend %title;
 }
@@ -14,6 +32,19 @@
     @include fontStyle(700, 20, 24);
   }
 }
+
+.our-projects__imgList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 104px;
+  text-align: center;
+}
+.our-projects__image {
+  margin-bottom: 13px;
+}
 .our-projects__text {
   @include fontStyle(400, 18, 21);
+
+  @include pushAuto;
+  max-width: 178px;
 }

@@ -1,8 +1,36 @@
 .left-part__title {
   @include fontFamily(b);
   @include fontStyle(600, 42, 50);
+
+  margin-bottom: 7px;
 }
 .left-part__text {
   @include fontFamily(i);
   @include fontStyle(400, 17, 29);
+
+  width: 291px;
+
+  margin-bottom: 48px;
+}
+
+.left-part__list {
+  display: flex;
+}
+
+.left-part__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+.left-part__link {
+  color: map-get($colors, 'footerText');
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'scrollActive');
+  }
+}
+.social-button__icon {
+  fill: currentColor;
 }

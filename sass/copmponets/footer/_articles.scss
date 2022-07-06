@@ -1,3 +1,11 @@
+.articles__item {
+  width: 201px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .articles__link {
   @include fontFamily(i);
   @include fontStyle(400, 17, 21);

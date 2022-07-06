@@ -40,4 +40,14 @@
   width: 162px;
   height: 56px;
   background-color: map-get($colors, 'heroBtnBkg');
+  color: map-get($colors, 'arowBTN');
+}
+
+.hero-button__icon {
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: map-get($colors, 'blackText');
+  }
 }

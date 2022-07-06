@@ -107,6 +107,7 @@
       <!-- About Us -->
       <div class="container">
         <section class="about-us">
+          <div class="bgi-thumb"></div>
           <!-- <img src="" alt="apartment plan" class="about-us__img" /> -->
           <ul class="about-us__list">
             <li class="about-us__item">
@@ -150,31 +151,73 @@
           </div>
           <ul class="our-projects__imgList">
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-1.jpg"
+                alt="photo of the dining room"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-2.jpg"
+                alt="photo of the house"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-3.jpg"
+                alt="photo of the house"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-4.jpg"
+                alt="photo of the living room"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-5.jpg"
+                alt="photo of the kitchen"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
             </li>
             <li class="our-projects__itemCard">
+              <img
+                src="./image/project-6.jpg"
+                alt="photo of the pool"
+                width="344"
+                height="193"
+                class="our-projects__image"
+              />
               <p class="our-projects__text">
                 Our Services Line one Servive line two
               </p>
@@ -189,26 +232,44 @@
           <h2 class="testimonial__title">Testimonial</h2>
           <ul class="testimonial__list">
             <li class="testimonial__item">
-              <h3 class="testimonial__subtitle">James Passaquindici Arcand</h3>
-              <p class="testimonial__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis
-              </p>
+              <img
+                src="./image/fotoJames.jpg"
+                alt="foto James"
+                class="testimonial__image"
+                width="151"
+              />
+              <div class="testimonial-thumb">
+                <h3 class="testimonial__subtitle">
+                  James Passaquindici Arcand
+                </h3>
+                <p class="testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis
+                </p>
+              </div>
             </li>
             <li class="testimonial__item">
-              <h3 class="testimonial__subtitle">Abram Schleifer</h3>
-              <p class="testimonial__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis
-              </p>
+              <img
+                src="./image/fotoAbram.jpg"
+                alt="foto James"
+                class="testimonial__image"
+                width="151"
+              />
+              <div class="testimonial-thumb">
+                <h3 class="testimonial__subtitle">Abram Schleifer</h3>
+                <p class="testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis
+                </p>
+              </div>
             </li>
           </ul>
           <ul class="scroll__list">
             <li class="scroll__item">
-              <button type="button" class="scroll__btn"></button>
+              <button type="button" class="scroll__btn active"></button>
             </li>
             <li class="scroll__item">
-              <button type="button" class="testimonial__btn"></button>
+              <button type="button" class="scroll__btn"></button>
             </li>
             <li class="scroll__item">
               <button type="button" class="scroll__btn"></button>
@@ -220,7 +281,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <!-- left part -->
         <div class="left-part">
           <h2 class="left-part__title">ArchiWeb</h2>
@@ -230,19 +291,25 @@
           </p>
           <ul class="left-part__list">
             <li class="left-part__item">
-              <a href="" class="left-part__link" aria-label="facebook"
-                >facebook</a
-              >
+              <a href="" class="left-part__link" aria-label="facebook">
+                <svg width="24" height="24" class="social-button__icon">
+                  <use href="./image/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="left-part__item">
-              <a href="" class="left-part__link" aria-label="twitter"
-                >twitter</a
-              >
+              <a href="" class="left-part__link" aria-label="twitter">
+                <svg width="24" height="24" class="social-button__icon">
+                  <use href="./image/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="left-part__item">
-              <a href="" class="left-part__link" aria-label="instagram"
-                >instagram</a
-              >
+              <a href="" class="left-part__link" aria-label="instagram">
+                <svg width="24" height="24" class="social-button__icon">
+                  <use href="./image/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -287,6 +354,7 @@
         <!-- footer Location -->
         <div class="location">
           <h3 class="location__title footer__subtitle">Location</h3>
+          <div class="location__thumb"></div>
         </div>
       </div>
     </footer>

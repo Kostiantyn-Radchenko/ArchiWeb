@@ -1,9 +1,35 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 76px;
+  padding-bottom: 95px;
+}
+
+.bgi-thumb {
+  display: inline-flex;
+  width: 735px;
+  height: 571px;
+  background-image: url('../image/aboutUs.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 456px;
+}
 .about-us__title {
   @extend %title;
+
+  margin-bottom: 27px;
 }
 
 .about-us__text {
   @include fontStyle(400, 31, 36);
+
+  margin-bottom: 36px;
 }
 
 .about-us__link {

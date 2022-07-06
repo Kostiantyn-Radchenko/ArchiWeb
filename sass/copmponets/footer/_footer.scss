@@ -3,7 +3,18 @@
   color: map-get($colors, 'footerText');
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding-top: 47px;
+  padding-bottom: 44px;
+}
+
 .footer__subtitle {
   @include fontFamily(i);
   @include fontStyle(700, 24, 29);
+
+  margin-bottom: 18px;
 }
