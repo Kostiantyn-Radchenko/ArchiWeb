@@ -56,7 +56,8 @@
 
   background-color: map-get($colors, 'scrollPassive');
 
-  &.active {
+  &:hover,
+  &:focus {
     background-color: map-get($colors, 'scrollActive');
   }
 }
