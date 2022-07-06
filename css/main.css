@@ -400,10 +400,9 @@ body {
 }
 
 .hero {
-  width: 1150px;
-  height: 739px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(url(../../../image/hero.jpg)));
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), url(../../../image/hero.jpg));
+  max-width: 1150px;
+  max-height: 739px;
+  background-image: url("../../../image/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
