@@ -1,10 +1,22 @@
 .hero {
+  position: absolute;
+}
+
+.hero__bgi {
+  position: relative;
+  left: 200px;
+
   max-width: 1150px;
   max-height: 739px;
+  padding-top: 95px;
   background-image: url('../image/hero.jpg');
+  z-index: 10;
 }
 
 .hero__thumb {
+  position: relative;
+  right: 300px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +43,9 @@
 }
 
 .hero__btn {
+  position: relative;
+  left: 988px;
+
   display: flex;
   justify-content: space-between;
 
