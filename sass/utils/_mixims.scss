@@ -25,5 +25,5 @@
 @mixin fontStyle($fontWeight, $fontSize, $lineHeight) {
   font-weight: $fontWeight;
   font-size: $fontSize * 1px;
-  line-height: #{$lineHeight/$fontSize};
+  line-height: calc($lineHeight/$fontSize);
 }
